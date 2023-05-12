@@ -1,0 +1,144 @@
+.hero__wrapper-main {
+  background-color: var(--first-brand-color);
+}
+.hero__wrapper-svg {
+  fill: var(--main-bg-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14rem;
+  height: auto;
+  display: block;
+  opacity: .8;
+}
+.hero {
+  padding: 10rem 0 3rem;
+  text-align: center;
+  position: relative;
+}
+.hero__block {
+  position: relative;
+  margin: 0 auto 1rem;
+  max-width: 35rem;
+}
+.hero .title {
+  margin-bottom: 1rem;
+}
+.hero__img {
+  display: block;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  height: auto;
+  -webkit-mask-image: url(../img/mask2.svg);
+  mask-image: url(../img/mask2.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  object-fit: cover;
+}
+
+.phrase {
+  padding: 10rem 0;
+  text-align: center;
+}
+.phrase__block {
+  max-width: 70rem;
+  margin: 0 auto 3rem;
+}
+.phrase__title {
+  font-family: var(--title-font);
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+.phrase__text-block .text {
+  margin-bottom: 3rem;
+}
+.phrase__img {
+  display: block;
+  width: 100%;
+  max-width: 80rem;
+  max-height: 50rem;
+  object-fit: cover;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: left;
+  }
+  .hero__block {
+    margin: 0 0 0 -5rem;
+  }
+  .hero__img {
+    margin: 0;
+  }
+  .hero__wrapper-svg {
+    fill: var(--main-bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14rem;
+    height: auto;
+    display: block;
+    opacity: .8;
+
+    top: auto;
+    bottom: 3rem;
+    left: auto;
+    right: 5rem;
+    filter: drop-shadow(.3rem .5rem .2rem rgb(0, 0, 0, 0.2));
+  }
+
+  .phrase {
+    text-align: left;
+    padding: 10rem 5rem;
+    position: relative;
+  }
+  .phrase__block {
+    margin: 0;
+  }
+  .phrase__img {
+    margin: 0;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    border-radius: 3rem;
+  }
+  .phrase__btn {
+    margin-left: 0;
+  }
+  .phrase__text-block {
+    border: .3rem solid var(--second-brand-color);
+    border-radius: 3rem;
+    padding: 3rem;
+    position: relative;
+  }
+  .phrase__text-block .text {
+    width: 60%;
+  }
+  .phrase__title {
+    width: 60%;
+  }
+  .phrase__text-block::before {
+    display: block;
+    content: '';
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url('../img/mask.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: .1;
+  }
+}
